@@ -6,10 +6,11 @@ HUG lets you save a dictionary of text snippets using the command line, either b
 
 ## Goals
 It can't be a repository without some feature goals! At a baseline, HUG will be able to do everything that boom can do.
- [ ] Parity with boom
- [ ] Saving text snippets from clipboard
- [ ] OSX support
- [ ] Linux support
+
+ - [ ] Parity with boom
+ - [ ] Saving text snippets from clipboard
+ - [ ] OSX support
+ - [ ] Linux support
 
 ## Usage
 This will have some screenshots soon of the actual implementation, but for now you'll have to deal with words. You'll find the usage
