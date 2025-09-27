@@ -1,5 +1,5 @@
 # HUG
-HUG (**H**ere yo**U** **G**o) is a reimplementation of (holman/boom)[https://github.com/holman/boom], written in pwsh.
+HUG (**H**ere yo**U** **G**o) is a reimplementation of [holman/boom](https://github.com/holman/boom), written in pwsh.
 
 ## About
 HUG lets you save a dictionary of text snippets using the command line, either by directly pasting the text into the command line (the boom method) or by pulling straight from your system clipboard.
@@ -77,5 +77,5 @@ is almost identical to boom.
 
 ## Special Thanks
 Obviously this isn't an original idea. I use PowerShell on the regular, so I figured I'd just reimplement a fantastic tool into one of
-my preferred shells. Thanks to (Zach Holman)[https://github.com/holman/] for creating the original repository, it's honestly 
+my preferred shells. Thanks to [Zach Holman](https://github.com/holman/) for creating the original repository, it's honestly 
 surprising it took me this long to find it for the first time. 
