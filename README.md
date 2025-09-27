@@ -14,6 +14,7 @@ It can't be a repository without some feature goals! At a baseline, HUG will be 
 ## Usage
 This will have some screenshots soon of the actual implementation, but for now you'll have to deal with words. You'll find the usage
 is almost identical to boom. 
+
 `hug help`
 
 : Displays each possible command template
