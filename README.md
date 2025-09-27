@@ -28,6 +28,9 @@ is almost identical to boom.
 
 : Creates a new list called 'urls'
 
+: If 'urls' already exists, it will show all items that belong to 'urls'
+
+
 `hug urls github https://github.com`
 
 : Creates a new item called 'github', with the value 'https://github.com'
@@ -43,10 +46,6 @@ is almost identical to boom.
 : Copies the 'github' value to your clipboard
 
 : `hug urls github` is an equivalent command
-
-`hug urls`
-
-: Lists all items in the 'urls' list
 
 `hug delete urls`
 
