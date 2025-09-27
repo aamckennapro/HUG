@@ -19,10 +19,26 @@ Real example could be
     "vimcs": "https://vim.rtorr.com"
 }
 
+This same command also lists everything in the list if it already exists, so the Json needs to be read to see if the list already
+exists.
+
+pwsh: Get-Content "file.json" | ConvertFrom-Json
 
 
-pwsh: Get-Content "file.json" | ConvertFrom-Jsoni
+hug <list> <item> <value>
+This creates a new item <item> with the value <value> in the target <list>. Expects the list to already be created.
 
+Check if list exists > create new field in list that has the key of item and the value of value
 
-hug <list> <item>
-This creates a new item. 
+Example: $file = Get-Content "file.json" | ConvertFrom-Json
+$file | rg "(?i)list" > check if returns true or false
+Figure out how to add to an existing JSON object, if we use our urls example above...
+"urls": {
+    "github": "https://github.com",
+    "gitlab": "https://gitlab.com",
+    "vimcheats": "https://vim.rtorr.com"
+}
+
+How would I add another key-value pairing to "urls"?
+It might be in my best interest to read the json file into memory with the Get-Content from above (I'll have to anyway to make sure
+the list exists).
