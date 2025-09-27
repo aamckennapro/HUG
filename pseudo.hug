@@ -1,0 +1,28 @@
+This little document is for how to implement each command, basic pseudocode, and helpful pwsh cmdlets for the job.
+
+hug <list>
+This creates a new list. It makes sense for hug to rely on a single JSON file, so the <list> will be an object with fields of 
+<items>. By default, the item will contain nothing!
+
+JSON file that hug is looking for is hug.json. By default, this file will contain nothing! 
+hug.json is going to be an extremely basic json. Structured as such:
+list: {
+    item: value,
+    item: value,
+    item: value,
+}
+
+Real example could be
+"urls": {
+    "github": "https://github.com",
+    "gitlab": "https://gitlab.com",
+    "vimcs": "https://vim.rtorr.com"
+}
+
+
+
+pwsh: Get-Content "file.json" | ConvertFrom-Jsoni
+
+
+hug <list> <item>
+This creates a new item. 
