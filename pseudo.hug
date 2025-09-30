@@ -1,5 +1,12 @@
 This little document is for how to implement each command, basic pseudocode, and helpful pwsh cmdlets for the job.
 
+The real question is how the fuck should I start? 
+
+Well ./hug.ps1 should do something. First we can create a function that looks for the JSON in the %Users%/ProgramData/HUG/hug.json
+path since that's where it'll be looking. Done.
+
+Now I need to handle parameters. Parameters should go at the top.
+
 hug <list>
 This creates a new list. It makes sense for hug to rely on a single JSON file, so the <list> will be an object with fields of 
 <items>. By default, the item will contain nothing!
@@ -11,6 +18,16 @@ list: {
     item: value,
     item: value,
 }
+
+^ Looks like this should be reworked into something slightly more complicated:
+list: {
+    item: {
+        name: value,
+        name: value,
+        name: value,
+    }
+}
+Best way to do this is through PSCustomObjects, as they can apparently be converted directly to JSON.
 
 Real example could be
 "urls": {
